@@ -1,0 +1,74 @@
+body{
+    margin: 20px;
+    padding:0;
+    width: 100% important!;
+    background-color: blue;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+body {
+  font-family: 'Open Sans';
+  overflow: hidden;
+  background: #222222;
+}
+
+.animation-container {
+  font-weight: 800;
+  font-size: 8em;
+  opacity: 1;
+}
+
+.animation-container svg {
+  width: 90%;
+  display: block;
+  top: 50%;
+  margin: -8% 0 0 5%;
+  position: fixed;
+}
+
+.animation-container svg .text {
+  width: 1000%;
+  fill: transparent;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-dasharray: 90,310;
+  stroke-dashoffset: 0;
+  -webkit-animation: text 8s infinite linear;
+  animation: text 8s infinite linear;
+}
+
+.animation-container svg .text:nth-child(4n + 1) {
+  stroke: rgb(202, 20, 20);
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.animation-container svg .text:nth-child(4n + 2) {
+  stroke: rgb(231, 4, 4);
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+}
+
+.animation-container svg .text:nth-child(4n + 3) {
+  stroke: rgb(224, 5, 5);
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+.animation-container svg .text:nth-child(4n + 4) {
+  stroke: rgb(230, 11, 11);
+  -webkit-animation-delay: -8s;
+  animation-delay: -8s;
+}
+
+@-webkit-keyframes text {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+.main{
+    margin: 100px;
+    padding:20px;
+}
